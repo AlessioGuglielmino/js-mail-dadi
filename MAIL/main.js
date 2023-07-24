@@ -16,6 +16,7 @@ const messaggio = document.getElementById("messaggio");
 sendButton.addEventListener("click", function () {
   const userMail = inputUserMail.value;
   let accesso = "Spiacenti, alla tua mail non è consentito l'accesso";
+  // INIZIO IL CICLO PER VERIFICARE LA VALIDITA' DELLA MAIL
 
   for (let i = 0; i < mailAccepted.length; i++) {
     if (userMail == mailAccepted[i]) {
@@ -24,7 +25,3 @@ sendButton.addEventListener("click", function () {
   }
   messaggio.innerHTML = accesso;
 });
-
-// INIZIO IL CICLO PER VERIFICARE LA VALIDITA' DELLA MAIL
-
-// console.log(accesso);
